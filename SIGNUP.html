@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<section class="bgimage">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>SIGN UP</title>
+    <script>
+      function check() {
+        var a = document.getElementById("t1").value;
+        var b = document.getElementById("t2").value;
+        var c = document.getElementById("t3").value;
+        var d = document.getElementById("t4").value;
+        var e = document.getElementById("t5").value;
+        atpos = b.indexOf("@");
+        dotpos = b.lastIndexOf(".");
+        if (a == "" || b == "" || c == "" || d == "" || e == "") {
+          alert("please enter all feilds");
+          
+        } 
+        if (atpos < 1 || dotpos - atpos < 3) {
+          alert("Please enter correct email ID");
+        }
+         if (isNaN(c) || c.length != 10) {
+          alert("Please enter a valid mobile number");
+        } 
+         if (d.length < 8) {
+          alert("minimum 8 character required for password");
+        }
+          if (d != e) {
+          alert("password does not match");
+         
+        }
+        
+        if(!((a == "" || b == "" || c == "" || d == "" || e == "")||(isNaN(c) || c.length != 10)||(d.length < 8)||(d != e)||(atpos < 1 || dotpos - atpos < 3))) {
+          alert("account created");
+        }
+
+
+      }
+    </script>
+  </head>
+
+  <body>
+    <form>
+      <div style="position: relative">
+        <div class="imgcontainer">
+          <img src="signuporiginalimg.png" alt="signup" />
+          <h1 class="signup">SIGN UP</h1>
+          <hr width="5%" style="color: rgb(11, 135, 185)" />
+        </div>
+
+        <div class="container" align="center">
+          <label class="name" for="uname"><b>USERNAME</b></label>
+          <input class="placeholder1" id="t1" type="text" placeholder="Enter Username" name="uname" />
+        </div>
+        <br /><br />
+        <div class="container" align="center">
+          <label class="name" for="psw"><b>EMAIL</b></label>
+          <input class="placeholder2" id="t2" type="text" placeholder="enter email" />
+        </div>
+        <br /><br />
+        <div class="container" align="center">
+          <label class="name" for="psw"><b>MOBILE</b></label>
+          <input class="placeholder3" id="t3" type="text" placeholder="enter mobile number" />
+        </div>
+        <br /><br />
+        <div class="container" align="center">
+          <label class="name" for="psw"><b>PASSWORD</b></label>
+          <input class="placeholder4" id="t4" type="password" placeholder="Enter Password" />
+        </div>
+        <br /><br />
+        <div class="container" align="center">
+          <label class="name5" for="psw"><b> CONFIRM PASSWORD</b></label>
+          <input class="placeholder5" id="t5" type="text" placeholder="Enter Password" />
+        </div>
+        <br /><br />
+        <div class="container" align="center">
+          <button class="signup2" id="t6" type="submit" onclick="check()">
+            SIGN UP
+          </button>
+          <a href="login.html"><button type="button" class="cancelbtn2">
+              GO TO LOGIN PAGE
+            </button></a>
+        </div>
+        <br /><br />
+
+        <div class="container" align="center">
+          <a href="index.html"><button type="button" class="cancelbtn">CANCEL</button></a>
+        </div>
+      </div>
+    </form>
+    <br />
+    <br />
+    <br />
+  </body>
+</section>
+
+</html>
