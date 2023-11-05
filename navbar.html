@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVBAR</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        /* Style for the search button */
+        #searchButton {
+            width: 2rem;
+            padding: 5px; /* Adjust the padding for height and width as needed */
+            font-size: 14px; /* Adjust the font size as needed */
+            vertical-align: middle;
+            border-radius: 50%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <li><a href="#"> <img src="./assets/my website logo.webp" alt="web logo" class="logo"></a></li>
+    <ul>
+        <li>
+            <label for="playing cards"></label>
+            <select name="cards" id="playing-cards">
+                <option value="plcrd" id="playing-cards"><a href="editing.html">Playing Cards</a></option>
+                <option value="10" id="playing-cards"><a href="editing.html">Under $10</a></option>
+                <option value="5" id="playing-cards"><a href="editing.html">Under $5</a></option>
+                <option value="STR WARS" id="playing-cards"><a href="editing.html">Star Wars Playing Cards</a></option>
+                <option value="BPC" id="playing-cards"><a href="editing.html">Bicycle Playing Cards</a></option>
+                <option value="KWP" id="playing-cards"><a href="editing.html">Kings Wild Project</a></option>
+                <option value="GPC" id="playing-cards"><a href="editing.html">Gilded Playing Cards</a></option>
+            </select>
+        </li>
+        <li><a href="#">ON SALE</a></li>
+        <li><a href="login.html">LOGIN</a></li>
+        <li><a href="signup.html">SIGNUP</a></li>
+        <li>
+            <div class="input-grouprounded" >
+                <input  id="searchinput" type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                <button id="searchButton" onclick="document.getElementById('searchinput').value = ''">&#128269;</button>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+</body>
+</html>

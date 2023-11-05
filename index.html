@@ -5,57 +5,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  
   <title>ONLYCARDS.COM</title>
+  <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
 
+<div id="navbar-placeholder"></div>
 
-  <nav class="navbar">
-    <ul>
-      </li>
-      <li><a href="#"> <img src="/my website logo.webp" alt="web logo" class="logo" height=100px></a></li><br><br>
+  <!-- The rest of your content ... -->
 
-      <li>
-        <label for="playing cards"></label>
-        <select name="cards" id="playing cards">
-         <a href="editing.html"> <option value="plcrd ">playing cards</option></a>
-         <a href="editing.html"> <option value="10 ">UNDER $10</option></a>
-         <a href="editing.html"> <option value="5 ">UNDER $5</option></a>
-         <a href="editing.html"> <option value="STR WARS ">STAR WARS PLAYING CARDS</option></a>
-         <a href="editing.html"> <option value="BPC ">BICYCLE PLAYING CARDS</option></a>
-         <a href="editing.html"> <option value="KWP ">KINGS WILD PROJECT</option></a>
-         <a href="editing.html"> <option value="GPC ">GILDED PLAYING CARDS</option></a>
-       </select>
+  <script>
+    // Use JavaScript to load and include the navbar component
+    const navbarPlaceholder = document.getElementById('navbar-placeholder');
 
-      </li>
-      <li><a href="#">ON SALE</a> </li>
-      <li><a href="#">FAQ's</a> </li>
-      <li><a href="#">WISHLIST</a> </li>
-      <li><a href="#">CART</a> </li>
-      <li><a href="login.html">LOGIN</a> </li>
-      <li><a href="SIGNUP.html">SIGNUP</a> </li>
-      <li>
-
-        <div class="input-grouprounded">
-          <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-            aria-describedby="search-addon" />
-
-          <span class="input-group-text border-0" id="search-addon">
-            <a href="index.html"><i class="fas fa-search"></i></a>
-          </span>
-        </div>
-      </li>
-    </ul>
-  </nav>
+    // Fetch and include the navbar content from navbar.html
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        navbarPlaceholder.innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading navbar:', error);
+      });
+  </script>
   <section class="one">
     <div class="slideshow-container">
       <div class="mySlides fade">
         <div class="numbertext"></div>
 
-        <img class="text2" src="57453-alt5_900x.webp" style="width:100%" height="500px">
+        <img class="text2" src="./assets/57453-alt5_900x.webp" style="width:100%" height="500px">
         <a href="index.html"> <input class="text" type="button" value="bye now"></a>
 
       </div>
@@ -64,7 +45,7 @@
 
         <div class="numbertext"></div>
 
-        <img class="text2" src="avengersrededitionplayingcardsdecks_900x.webp" style="width:100%" height="500px">
+        <img class="text2" src="./assets/avengersrededitionplayingcardsdecks_900x.webp" style="width:100%" height="500px">
         <a href="index.html"> <input class="text" type="button" value="bye now"></a>
 
       </div>
@@ -73,7 +54,7 @@
 
         <div class="numbertext"></div>
 
-        <img class="text2" src="NotoriousGamblingFrog-1_900x.webp" style="width:100%" height="500px">
+        <img class="text2" src="./assets/NotoriousGamblingFrog-1_900x.webp" style="width:100%" height="500px">
         <a href="index.html"> <input class="text" type="button" value="bye now"></a>
 
       </div>
@@ -82,105 +63,63 @@
 
         <div class="numbertext"></div>
 
-        <img class="text2" src="Harry_potter_playing_cards_decks_by_theory11_playing_cards_2048x.webp"
+        <img class="text2" src="./assets/Harry_potter_playing_cards_decks_by_theory11_playing_cards_2048x.webp"
           style="width:  100%" height="500px">
         <a href="index.html"> <input class="text" type="button" value="bye now"></a>
 
       </div>
       <div class="mySlides fade">
         <div class="numbertext"></div>
-        <img class="text2" src="iron man 1000.webp" style="width:  100%" height="500px">
+        <img class="text2" src="./assets/iron man 1000.webp" style="width:  100%" height="500px">
         <a href="index.html"> <input class="text" type="button" value="bye now"></a>
       </div>
       
     </div>
   </section>
 
-  <section class="two">
-    <div class="heading">
-      <h2>80's COLLECTION</h2>
-      <hr style="width: 20%; color:#656565;  ">
-    </div>
-    <div class="img_1">
-      <div class="for_img_1"></div>
-      <a href="#"> <img src="recently added 3 for 80's3.jpg" style="width:  100%" height="250px">
 
-    </div>
-    <div class="img_2">
-      <div class="for_img_2"></div>
-      <a href="#"> <img src="rare cards (80's).webp" style="width:  100%" height="250px">
 
-      </a>
-    </div>
-    <div class="footing1">
-      <a href="index.html"> <input type="submit" class="button_2" value="RECENTLY ADDED"></a>
-    </div>
-    <div class="footing2">
-      <a href="index.html"> <input type="submit" class="button_2" value="RECENTLY ADDED"></a>
-    </div>
-  </section>
+<div id="section-two"></div>
 
-  <section class="three">
-    <div class="heading3">
-      <h3></h3><b>FEATURED PRODUCTS</b></h3>
-      <hr style="width: 20%; color:#656565; ">
-    </div>
-    <div class="img_1">
-      <a href="#"> <img src="img1new(featured).webp" style="width:  250px" height="250px"></a>
-      <div style="text-align: center;font-weight: 700;"> IRON MAN MK 1</div><BR>
-      <div style="text-align: center;""><strike> &#8377 4201.95 INR</div></strike>
-      <div style=" text-align: center ;font-weight:700;color: red;"> &#8377 3826.17 INR</div>
-    </div>
-    <div class="img_2">
-      <a href="#"> <img src="img2(featured).webp" style="width:  250px" height="250px"></a>
-      <div style="text-align: center;font-weight: 700;"> STRATOSPHERE <BR> PLAYING CARDS-<BR>
-        ULTRA BLACK</div><BR>
-      <div style="text-align: center;""><strike> &#8377 3095.04 INR</div></strike>
-      <div style=" text-align: center ;font-weight:700;color: red"> &#8377 2295.70 INR</div>
-    </div>
-    <div class="img_3">
-      <a href="#"> <img src="img3(featured).webp" style="width:  250px" height="250px"></a>
-      <div style="text-align: center;font-weight: 700;"> DISTOPIA PLAYING<BR> CARDS</div><BR>
-      <div style="text-align: center;""><strike> &#8377 2500.04INR</div></strike>
-      <div style=" text-align: center ;font-weight:700;color: red"> &#8377 1913.08 INR</div>
-    </div>
-    <div class="img_4">
-      <a href="#"> <img src="img4(featured).webp" style="width:  100%" height="250px"></a>
-      <div style="text-align: center;font-weight: 700;"> HOLOGRAPHIC LEGAL<BR>
-        TENDER VERSION II<BR>
-        BY KINGS WILD <br> PROJECTS</div><BR>
-      <div style="text-align: center;""><strike> &#8377 1913.08 INR</div></strike>
-          <div style=" text-align: center ;font-weight:700;color: red"> &#8377 1,147.08 INR</div>
+  <!-- The rest of your content ... -->
 
-    </div>
-    <div class="img_5">
-      <a href="#"><img src="img5(featured).webp" style="width:  100%" height="250px"></a>
-      <div style="text-align: center;font-weight: 700;"> ARTHURIAN PLAYING <BR> CARDS-HOLY GRAIL<BR> EDITION BY
-        KINGS<BR> WILD PROJECT</div><BR>
-      <div style="text-align: center;"><strike> &#8377 2245.05 INR</div></strike>
-      <div style="text-align: center ;font-weight:700;color: red"> &#8377 1147.08 INR</div>
-    </div>
+  <script>
+    // Use JavaScript to load and include the navbar component
+    const sectiontwo = document.getElementById('section-two');
 
-    <div class="img_6">
-      <a href="#"> <img src="img6(featured).webp" style="width:  100%" height="250px"></a>
-      <div style="text-align: center;font-weight: 700"> THE HOUSE OF THE <BR>RISING SPADE-<BR> CARTOMANCERR V2</div>
-      <BR>
-      <div style="text-align: center;"><strike> &#8377 35980.60 INR</div></strike>
-      <div style="text-align: center ;font-weight:700;color: red"> &#8377 2295.70 INR</div>
-    </div>
-    <div class="img_7">
-      <a href="#"> <img src="img7(featured).webp" style="width:  250px" height="250px"></a>
-      <div style="text-align: center;font-weight: 700;"> TEMPO PLAYING <BR> CARDS-ORIGINAL</div><BR>
-      <div style="text-align: center;"><strike> &#8377 5280.90 INR</div></strike>
-      <div style="text-align: center ;font-weight:700;color: red"> &#8377 4591.40 INR</div>
-    </div>
-    <div class="img_8">
-      <a href="#"> <img src="img8(featured).webp" style="width:  100%" height="250px"></a>
-      <div style="text-align: center;font-weight: 700;"> THE ORIGIN PLAYING <BR> CARDS-SPECIAL <BR> EDITION</div><BR>
-      <div style="text-align: center;"><strike> &#8377 5491.40 INR</div></strike>
-      <div style="text-align: center ;font-weight:700;color: red"> &#8377 4591.40 INR</div>
-    </div>
-  </section>
+    // Fetch and include the navbar content from navbar.html
+    fetch('section2.html')
+      .then(response => response.text())
+      .then(data => {
+      sectiontwo.innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Error loading section2:', error);
+      });
+  </script>  
+
+
+<div id="section-three"></div>
+
+  <!-- The rest of your content ... -->
+
+  <script>
+    // Use JavaScript to load and include the navbar component
+    const sectionthree = document.getElementById('section-three');
+    
+    // Fetch and include the navbar content from navbar.html
+    fetch('section3.html')
+      .then(response => response.text())
+      .then(data => {
+      sectionthree.innerHTML = data;
+      
+      })
+      .catch(error => {
+        console.error('Error loading section3:', error);
+      });
+  </script>
+
+  
   <section class="footer1">
     <div class="foot_1" style="text-align: right;font-weight: 250; ">
       <BR><BR><BR><BR><BR>REVIEW<BR>
@@ -223,10 +162,11 @@
   </section>
   <section class="footer">
     <div class="footelement" align="center">
-      <a href="index.html"><img src="social.png"></a>
+      <a href="index.html"><img src="./assets/social.png"></a>
     </div>
 
   </section>
+
 
   <script type="text/javascript">
     let slideIndex = 0;

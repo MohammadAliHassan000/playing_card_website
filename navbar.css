@@ -1,0 +1,105 @@
+/* Resetting default list styles and removing list item bullets */
+button{
+    background-color: white;
+}
+.navbar{
+    padding-bottom: 1.5rem;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    /* Vertically center the content */
+    justify-content: space-between;
+    /* Distribute content equally */
+    /* height: 80px; */
+}
+
+/* Styling for the list items in the navbar */
+.navbar ul li {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Styling for the anchor (link) tags in the navbar */
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    /* Change the color as needed */
+    font-weight: bold;
+}
+
+/* Styling for the logo image */
+.navbar .logo {
+    margin-top: 8px;
+    /* Adjust the width as needed */
+    height: 50px;
+    /* Adjust the height as needed */
+    border-radius: 50%;
+    /* Make the logo a circle */
+    overflow: auto;
+    /* Hide any overflowing content */
+}
+
+/* Styling for the image within the logo */
+.navbar .logo img {
+    width: 100%;
+    /* Make sure the image fills the circular logo container */
+    height: 100%;
+    /* Make sure the image fills the circular logo container */
+    object-fit: cover;
+    /* Resize the image to cover the container while maintaining aspect ratio */
+}
+
+/* Styling for the dropdown select element */
+.navbar select#playing-cards {
+    padding: 5px;
+    border: 2px solid #333;
+    /* Change the border color as needed */
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+#playing-cards{
+    border: 2px solid #333;
+    font-weight: bold;
+}
+
+/* Styling for the search input and button */
+.navbar input[type="search"] {
+    padding: 5px;
+    border: 2px solid #333;
+    /* Change the border color as needed */
+    border-radius: 5px;
+}
+
+/* Styling for the search button */
+.navbar .input-group-text {
+    background-color: #333;
+    /* Change the background color as needed */
+    border: 2px solid #333;
+    /* Change the border color as needed */
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Styling for the search button icon */
+.navbar .input-group-text a {
+    color: #fff;
+    /* Change the color as needed */
+    text-decoration: none;
+}
+
+/* Media query for responsive design - adjust as needed */
+@media (max-width: 950px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}

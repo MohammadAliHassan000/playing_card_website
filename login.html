@@ -1,76 +1,58 @@
 <!DOCTYPE html>
-<html lang="en"  >
-  <section >
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="loginstyle.css">
-    <title>LOGIN</title>
-    <script>
-      function check()
-      {
-      var a=document.getElementById("t1").value;
-      
-      var d=document.getElementById("t2").value;
-      
-      
-      if(a=="" ||  d=="" )
-      {alert("please enter all feilds");}
-
-      if(d.length<8){
-        alert('incorrect password or username');
-       
-      }
-      
-      if(!((a=="" ||  d=="" )||(d.length<8)))
-        {alert("you are logged in ");}
-      }
-      </script>
-      
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body >
-    <form  >
-      <div style="position: relative;">
-        <div class="imgcontainer" >
-          <img  class="login" src="login image.jpg" alt="login"  >
-          <h1  >LOGIN</h1>
-          <hr   style="color: rgb(11, 135, 185);" width="5%" >
-        </div>
-        
-        <div class="container" align="center" >
-          <label class="name1" for="uname"><b>USERNAME</b></label>
-          <input class="placeholder1" id="t1" type="text" placeholder="Enter Username" name="uname" >
-          </div><br><br>
-         
-      <div class="container"  align="center">
-          <label class="name2" for="psw"><b>PASSWORD</b></label>
-          <input class="placeholder4" id="t2" type="password" placeholder="Enter Password" name="psw" >
-        </div><br><br>
-     
-      <div class="container"  align="center">
-           <button class="signup2" id="t6" type="submit" onclick="check()" >LOGIN</button>
-
-           <a href="index.html"><button  type="button" class="cancelbtn3"> BACK TO HOME </button></a>
-
-           <button  type="button" class="cancelbtn2">don't have account<br><a href="SIGNUP.html"> SIGNUP </a></button>
-           
-         
-        </div >
-      
-        <div class="container"  align="center">
-          <a href="index.html"><button  type="button" class="cancelbtn">CANCEL</button></a>
-         
-         
-        </div>
+<body>
+<link rel="stylesheet" href="loginstyle.css">
+<div class="container">
+  <div class="imgdiv">
+    <img class="logimg" src="./assets/login image.jpg" alt="login Image">
+  </div>
+  <form action="login.html">
+    <div class="row">
+      <h2 style="text-align:center">Login with Social Media or Manually</h2>
+      <div class="vl">
+        <span class="vl-innertext">or</span>
       </div>
-      </form>
-      <br>
-      <br>
-      <br>
+
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </div>
       
-    
-    
+    </div>
+  </form>
+</div>
+
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="SIGNUP.html" style="color:white" class="btn">Sign up</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>
+
 </body>
-</section>
 </html>

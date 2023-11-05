@@ -1,4 +1,7 @@
-* {box-sizing:border-box}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box}
 
 .one{
   position:relative;
@@ -37,7 +40,6 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -94,7 +96,8 @@ position: relative;
 
 .navbar {
     background-color:#269db3;
-    border-radius: 10px;
+    border-radius: 2px;
+    height: 40%;
 }
 
 .navbar ul {
@@ -182,7 +185,19 @@ position: relative;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; 
 }
-
+.two img{
+    border-radius: 10px;
+    /* border: 2px solid #333; */
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px 5px #888888;
+    transition: all 0.3s ease-in-out;
+}
+.two img:hover {
+  transform: scale(1.1);
+  background-color: #0898b2;
+  box-shadow: 3px -4px 5px #43b7cb;
+}
 .img_1{
   grid-column: 1/2;
   grid-row:2/3;
@@ -211,7 +226,20 @@ position: relative;
   justify-self: center;
   border: none;
 }
+.three img {
+  border-radius: 10px;
+  /* border: 2px solid #333; */
+  margin: 10px;
+  padding: 5px;
+  box-shadow: 3px 3px 5px #888888;
+  transition: all 0.3s ease-in-out;
+}
 
+.three img:hover {
+  transform: scale(1.1);
+  background-color: #0898b2;
+  box-shadow: 3px -4px 5px #43b7cb;
+}
 .three{
   position: relative;
   top:-15px;
@@ -352,8 +380,11 @@ position: relative;
 
 .button_1{
   cursor: pointer;
-  background-color:
-  rgb(199, 196, 196);
+    background-color:#269db3;
+    border-radius: 20px;
+    height: 20px;
+    width: 70px;
+
 
 }
 
@@ -376,7 +407,7 @@ position: relative;
 }
 
 button {
-  background-color: #04AA6D;
+  background-color: white;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -485,5 +516,3 @@ button:hover {
   height: 40px;
 }
 
- 
-/* LOGIN CSS */ 
